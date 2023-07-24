@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Resturant-Template</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">AboutUs</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">OrderNow</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+      <i class="fa fa-shopping-cart"></i>
+      <form class="search-form">
+        <button type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </nav>
+    <div class="overlay"></div>
+    <main class="main bgimg">
+      <section class="section1">
+        <h1>Welcome To Our Cuisine Restaurant</h1>
+        <div class="wrapper">
+          <input type="text" placeholder="Enter Text Here" class="left" />
+          <a href="#" class="right">Location</a>
+        </div>
+        <ul class="sec1ul">
+          <li><i class="fa fa-thumbs-up"></i> 256K</li>
+          <li><i class="fa fa-comment"></i> 62k</li>
+          <li><i class="fa fa-share-square"></i> 55k</li>
+        </ul>
+      </section>
+    </main>
+    <section class="section2 bgimg2">
+      <div class="div2">
+        <span>AboutUs</span>
+        <h2>Discover Our Restaurant Story</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia
+          sequi ipsum neque adipisci, a porro vel dolorem minus, ullam, veniam
+          unde ipsa? Voluptas quos quae nemo nostrum repellat repellendus!
+        </p>
+        <a href="#">Discover Menu</a>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="div3a">
+        <div class="div3b">
+          <span>Order Online Now</span>
+          <h3>Our Specility Cuisine</h3>
+
+          <ul>
+            <li><a href="#">BreakFast</a></li>
+            <li><a href="#">Lunch </a></li>
+            <li><a href="#">Dinner </a></li>
+            <li><a href="#">Dessert </a></li>
+            <li><a href="#">Shake </a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <img src="cuisine.jpg" alt="Image 1" />
+          <img src="cuisine.jpg" alt="Image 2" />
+          <img src="cuisine.jpg" alt="Image 3" />
+          <img src="cuisine.jpg" alt="Image 4" />
+        </div>
+        <div class="row">
+          <img src="cuisine.jpg" alt="Image 5" />
+          <img src="cuisine.jpg" alt="Image 6" />
+          <img src="cuisine.jpg" alt="Image 7" />
+          <img src="cuisine.jpg" alt="Image 8" />
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <section class="section4a">
+        <span class="orange">Book Table</span>
+        <h3>Opening Hours</h3>
+        <i class="fa-heart orange"></i><br />
+        <span class="spanCN">Call Now</span><br />
+        <span class="orange spanNo">03335018513</span>
+      </section>
+      <section class="section4b">
+        <h4>Monday to Tuesday</h4>
+        <br />
+        <span>9:00am - 10:00pm</span>
+      </section>
+      <section class="section4c">
+        <h4>Friday to Sunday</h4>
+        <br />
+        <span>11:00am - 11:00pm</span>
+      </section>
+      <section class="image">
+        <img src="pexels-elevate-1267320.jpg" alt="Image" />
+      </section>
+    </section>
+    <section class="section5">
+      <span class="spant">Testimonial</span>
+      <h4>Customer Say</h4>
+      <img src="1599582228510.jpg" alt="" /><br />
+      <span class="spanN">Mr. Saeed</span><br />
+      <span class="spanA">Art Director</span> <br />
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia minima
+        unde doloremque. Sunt quasi id fugiat doloremque. Illum sequi quos
+        provident ea molestias aperiam modi laudantium eaque sed mollitia.
+      </p>
+    </section>
+
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+
+    <script>
+      // Place this JavaScript code along with your existing JavaScript code
+
+      // Toggle the side navigation menu
+      function toggleMenu() {
+        var menu = document.querySelector(".nav-menu");
+        var overlay = document.querySelector(".overlay");
+        menu.classList.toggle("show");
+        overlay.classList.toggle("show");
+      }
+
+      // Open or close the menu when the hamburger icon is clicked
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", toggleMenu);
+
+      // Close the menu when the user clicks outside the menu or overlay
+      window.addEventListener("click", function (event) {
+        var menu = document.querySelector(".nav-menu");
+        var overlay = document.querySelector(".overlay");
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+          menu.classList.remove("show");
+          overlay.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>

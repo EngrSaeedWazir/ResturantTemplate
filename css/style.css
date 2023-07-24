@@ -1,0 +1,641 @@
+/* Add this CSS code to your existing style.css file */
+
+/* Reset styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  /* background-color: #333; */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-menu li {
+  margin-right: 10px;
+}
+
+.nav-menu li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.fa-shopping-cart {
+  color: black;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.search-form button {
+  margin-right: 100px;
+  /* background-color: transparent; */
+  /* border: none; */
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  margin-top: -47px;
+  height: 500px;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.bgimg {
+  background-image: url("../images/dieta+skin.jpg");
+  background-size: cover;
+  /* background-position: center; */
+}
+.section1 {
+  /* display: flex; */
+  margin-left: 67px;
+  padding: 60px;
+  width: 40%;
+  height: 300px;
+}
+
+.section1 h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.wrapper {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+}
+
+.left {
+  margin-right: -4px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.right {
+  margin-bottom: 10.3px;
+  background: orange;
+  color: white;
+  text-decoration: none;
+  padding: 7.1px 18px;
+  border: 1px solid #000;
+}
+
+ul {
+  color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li i {
+  color: orange;
+  margin-right: 5px;
+}
+
+/* Section 2 */
+/* .section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+} */
+
+.bgimg2 {
+  color: black;
+  background-image: url("../images/cookies-breakfast.jpg");
+  /* background-size: cover;
+  background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+/* .section2 .div2 {
+  text-align: right;
+} */
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .div2 {
+  left: 53px;
+
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section2 .div2 > * {
+  position: relative;
+  left: 50%;
+}
+.div2 span {
+  font-size: 18px;
+  bottom: 40px;
+}
+
+.div2 h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.div2 p {
+  margin-bottom: 20px;
+}
+
+.div2 a {
+  border: 1px solid orange;
+  background: orange;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Section 3 */
+.section3 {
+  background: #f0f6f6;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.div3a {
+  margin-bottom: 40px;
+}
+
+.div3b span {
+  position: relative;
+  bottom: 43px;
+  color: orange;
+  font-size: 1rem;
+  font-size: 18px;
+}
+
+.div3b h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.div3b ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.div3b ul li {
+  margin-right: 10px;
+}
+
+.div3b ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row img {
+  width: 200px;
+  margin: 5px;
+}
+
+/* Section 4 */
+/* .section4 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+} */
+
+/* .section4a,
+.section4b,
+.section4c {
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+/* .section4a {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section4b {
+  flex-basis: 50%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.section4c {
+  flex-basis: 50%;
+  text-align: right;
+  margin-bottom: 20px;
+} */
+
+.section4 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+}
+
+.section4a,
+.section4b,
+.section4c {
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section4b {
+  align-self: flex-start;
+}
+
+.section4c {
+  align-self: flex-end;
+}
+
+.section4a .orange {
+  color: orange;
+}
+
+.section4a i {
+  font-size: 24px;
+  /* margin-bottom: -12px; */
+  position: relative;
+  top: 17px;
+}
+.section4a .spanCN {
+  position: relative;
+  top: 15px;
+}
+.section4a .spanNo {
+  position: relative;
+  top: 15px;
+}
+.section4a h3 {
+  font-weight: bold;
+  position: relative;
+  top: 9px;
+}
+.section4b h4 {
+  position: relative;
+  top: 9px;
+  font-weight: bold;
+}
+.section4c h4 {
+  position: relative;
+  top: 9px;
+  font-weight: bold;
+}
+
+/* Section 5 */
+.section5 {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.spant {
+  font-size: 18px;
+}
+
+.section5 h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section5 img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.spanN {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.spanA {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.section5 p {
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    padding: 50px 0;
+  }
+
+  .section1 h1 {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .right {
+    margin-top: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  .div2 h2 {
+    font-size: 24px;
+  }
+
+  .div2 p {
+    font-size: 14px;
+  }
+
+  .div2 a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .div3b h3 {
+    font-size: 20px;
+  }
+
+  .div3b ul {
+    flex-wrap: wrap;
+  }
+
+  .div3b ul li {
+    margin-bottom: 10px;
+  }
+
+  .row img {
+    width: 150px;
+  }
+
+  .section4a,
+  .section4b,
+  .section4c {
+    flex-basis: 100%;
+  }
+
+  .section5 p {
+    font-size: 14px;
+  }
+}
+
+.hamburger {
+  display: none; /* Hide the menu by default */
+}
+
+.nav-menu.show {
+  display: block; /* Show the menu when the "show" class is added */
+}
+
+@media screen and (max-width: 780px) {
+  /* Place this CSS code along with your existing CSS styles */
+  .nav-menu {
+    display: none; /* Hide the menu by default */
+  }
+
+  /* Hamburger Icon */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 27px;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 4px;
+  }
+
+  /* Side Navigation Menu */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(232 237 241);
+    padding: 20px;
+    list-style: none;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .nav-menu.show {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 9999;
+    display: none;
+  }
+
+  .overlay.show {
+    display: block;
+  }
+
+  .search-form button {
+    margin-right: 0;
+    /* background-color: transparent; */
+    /* border: none; */
+    cursor: pointer;
+  }
+  .fa-shopping-cart {
+    color: black;
+    font-size: 18px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .sec1ul {
+    display: flex;
+
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section1 {
+    margin-left: 38px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .div2 {
+    left: 14px;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .section2 .div2 > * {
+    position: relative;
+    left: 0;
+  }
+
+  .bgimg2 {
+    color: black;
+    background-image: url(#);
+    height: 500px;
+    background-color: #fbfaf8;
+  }
+}
+@media screen and (min-width: 279px) {
+  .div2 a {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (min-width: 880px) {
+  .section1 h1 {
+    margin-right: 100px;
+  }
+} */
+.section3 .div3b ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section3 .div3b ul li {
+  text-align: center;
+}
+
+/* Media query for screens with a maximum width of 770px */
+@media (max-width: 770px) {
+  .section3 .div3b ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.image {
+  position: relative;
+  top: 32px;
+  display: block;
+  max-width: 100%;
+  height: 309px;
+  margin: 452px;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.section4 .section4a,
+.section4 .section4b,
+.section4 .section4c {
+  flex-basis: 100%;
+}
+
+/* Media query for screens with a maximum width of 770px */
+@media (max-width: 770px) {
+  .section4 .section4a,
+  .section4 .section4b,
+  .section4 .section4c {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 462px) {
+  .image {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 299px) {
+  .image {
+    height: 187px;
+    width: 300px;
+  }
+}
+
+.section2 p {
+  text-align: justify;
+}
